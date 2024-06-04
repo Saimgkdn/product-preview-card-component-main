@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  width: 700px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 50%;
+  padding: 35px;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: hsla(228, 12%, 48%, 0.762);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 1.1;
+  color: hsl(212, 21%, 14%);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: hsla(227, 13%, 27%, 0.586);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.price {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.p1 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.p2 {
+  color: hsla(227, 13%, 27%, 0.586);
+  font-weight: 600;
+  text-decoration: line-through;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  padding: 18px 30px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button img {
+  margin-right: 10px;
+}
+
+button:hover,
+button:active {
+  background-color: hsl(161, 77%, 15%);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    border-radius: 15px;
+  }
+
+  .image {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .content {
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
